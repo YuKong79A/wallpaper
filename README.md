@@ -1,6 +1,14 @@
 # 壁纸收藏集
 
-个人壁纸收藏，收录**哲风壁纸**系列及 [Wallhaven](https://wallhaven.cc) 精选，共 76 张。
+个人壁纸收藏，收录 **哲风壁纸** 系列及 [Wallhaven](https://wallhaven.cc) 精选。
+
+## 收藏概览
+
+- 壁纸总数：**81 张**
+- 存放目录：[`Wallpapers/`](./Wallpapers)
+- 内容分类：二次元 / 动漫、CG 插画、古风 / 国风、自然风景、手绘 / 线稿、写真 / 插画、Wallhaven 精选
+
+README 中的预览图片与 `Wallpapers/` 目录保持同步，便于直接浏览和挑选。
 
 ---
 
@@ -55,6 +63,12 @@
 <td><img src="Wallpapers/【哲风壁纸】jk-制服-动漫女孩.png" width="200"/><br>JK-制服-动漫女孩</td>
 <td><img src="Wallpapers/【哲风壁纸】jk-制服-动漫.png" width="200"/><br>JK-制服-动漫</td>
 </tr>
+<tr>
+<td><img src="Wallpapers/【哲风壁纸】eva-二次元.png" width="200"/><br>EVA-二次元</td>
+<td><img src="Wallpapers/【哲风壁纸】二次元-伸手-少女.png" width="200"/><br>二次元-伸手-少女</td>
+<td><img src="Wallpapers/【哲风壁纸】4K-4K壁纸.png" width="200"/><br>4K-4K壁纸</td>
+<td></td>
+</tr>
 </table>
 
 ---
@@ -107,6 +121,8 @@
 <tr>
 <td><img src="Wallpapers/【哲风壁纸】户外-晴天-蓝天白云.png" width="200"/><br>户外-晴天-蓝天白云</td>
 <td><img src="Wallpapers/【哲风壁纸】SilentShore-俯瞰.png" width="200"/><br>SilentShore-俯瞰</td>
+<td><img src="Wallpapers/【哲风壁纸】大草原-天空-宁静.png" width="200"/><br>大草原-天空-宁静</td>
+<td></td>
 </tr>
 </table>
 
@@ -146,6 +162,8 @@
 <tr>
 <td><img src="Wallpapers/【哲风壁纸】养眼-墨绿-插画.png" width="200"/><br>养眼-墨绿-插画</td>
 <td><img src="Wallpapers/【哲风壁纸】天使-天使宝剑-岩石.png" width="200"/><br>天使-天使宝剑-岩石</td>
+<td><img src="Wallpapers/【哲风壁纸】休闲-室内-居家.png" width="200"/><br>休闲-室内-居家</td>
+<td><img src="Wallpapers/【哲风壁纸】室内-御姐-性感.png" width="200"/><br>室内-御姐-性感</td>
 </tr>
 </table>
 
