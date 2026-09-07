@@ -1,0 +1,16 @@
+#!name=糖心Vlog + 外部播放器
+#!desc=糖心Vlog 解锁点播去广告，发现视频后发送播放器跳转通知
+#!icon=https://txscript.pages.dev/tx/icon.png
+#!category=18+
+#!arguments=播放器:lenna,自定义scheme:none,URL编码:default,播放器跳转:yes
+#!arguments-desc=播放器: lenna / SenPlayer / SenPlayer-dl / Infuse / Fileball / VidHub / IINA / Alook / VLC / KMPlayer / NPlayer / Safari\n自定义scheme: 填写后覆盖播放器，例如 myplayer://play?url=；none 表示不启用\nURL编码: yes / no / default\n播放器跳转: yes(默认) / no
+
+[URL Rewrite]
+^https?:\/\/((?:[a-z]+\.)?txh\d+\.com)\/(h5\/(?:user\/info|system\/info|movie\/(?:detail|block|search))) https://txscript.pages.dev/tx/$1/$2 header
+
+[Script]
+糖心播放器通知 = type=http-request, pattern=^https:\/\/tx-player\.local\/notify, timeout=10, script-path=https://raw.githubusercontent.com/YuKong79A/wallpaper/main/tx-player.js, argument=player={{{播放器}}}&scheme={{{自定义scheme}}}&encode={{{URL编码}}}&jump={{{播放器跳转}}}
+糖心播放器注入 = type=http-response, pattern=^https?:\/\/(?:[a-z]+\.)?txh\d+\.com\/(?:$|\?|movie\/detail(?:\/[^\/?]+)?(?:\?|$)), requires-body=1, max-size=-1, timeout=20, script-path=https://raw.githubusercontent.com/YuKong79A/wallpaper/main/tx-player.js, argument=player={{{播放器}}}&scheme={{{自定义scheme}}}&encode={{{URL编码}}}&jump={{{播放器跳转}}}
+
+[MITM]
+hostname = %APPEND% *.txh066.com, *.txh067.com, *.txh068.com, *.txh069.com, *.txh087.com, txh066.com, txh067.com, txh068.com, txh069.com, txh087.com, tx-player.local
