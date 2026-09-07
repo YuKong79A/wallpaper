@@ -1,0 +1,15 @@
+#!name=糖心Vlog + 外部播放器
+#!desc=糖心Vlog 解锁点播去广告，并在网页中添加外部播放器按钮
+#!icon=https://txscript.pages.dev/tx/icon.png
+#!category=18+
+#!arguments=播放器:lenna,自定义scheme:none,URL编码:default
+#!arguments-desc=播放器: lenna / SenPlayer / SenPlayer-dl / Infuse / Fileball / VidHub / IINA / Alook / VLC / KMPlayer / NPlayer / Safari\n自定义scheme: 填写后覆盖播放器，例如 myplayer://play?url=；none 表示不启用\nURL编码: yes / no / default
+
+[URL Rewrite]
+^https?:\/\/((?:[a-z]+\.)?txh\d+\.com)\/(h5\/(?:user\/info|system\/info|movie\/(?:detail|block|search))) https://txscript.pages.dev/tx/$1/$2 header
+
+[Script]
+糖心外部播放器 = type=http-response, pattern=^https?:\/\/(?:[a-z]+\.)?txh\d+\.com\/(?:$|\?), requires-body=1, max-size=-1, timeout=20, script-path=https://raw.githubusercontent.com/YuKong79A/wallpaper/main/tx-player.js, argument=player={{{播放器}}}&scheme={{{自定义scheme}}}&encode={{{URL编码}}}
+
+[MITM]
+hostname = %APPEND% *.txh066.com, *.txh067.com, *.txh068.com, *.txh069.com, *.txh087.com, txh066.com, txh067.com, txh068.com, txh069.com, txh087.com
